@@ -1,7 +1,7 @@
 
 # Pandemic Mortality Trends: A Deep Dive into Provisional COVID-19 Death Data
 
-Introduction¶
+## Introduction 
 This dataset captures COVID-19 data across different regions, focusing on mortality rates and trends. The data includes key metrics such as COVID-related deaths, percentage of total deaths due to COVID, weekly percentage changes, and crude COVID rates. The data spans a defined period with start and end dates and is categorized by residence jurisdiction, with the "total" group aggregating data for various time periods.
 
 
