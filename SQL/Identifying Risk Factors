@@ -1,5 +1,4 @@
-/*Identifying Risk Factors Based on Demographics and Encounter Reasons
-Q 0.3
+
 Objective:
 Analyze the top 3 most frequent diagnosis codes (ReasonCodes) and the associated patient demographic data to understand 
 which groups are most affected by high-cost encounters.*
