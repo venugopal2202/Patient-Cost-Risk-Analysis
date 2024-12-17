@@ -17,9 +17,8 @@ Procedures
 Payers
 Organizations
 # ⚙️ Tools & Technologies Used
-SQL: Data cleaning, querying, and analysis.
-
-Power BI: Interactive visualizations and dashboards.
+* SQL: Data cleaning, querying, and analysis.
+* Power BI: Interactive visualizations and dashboards.
 # 🗂️ Dataset Description
 |SL-NO|NAME|DESCRIBE|LINK|
 |-|-|-|-|
@@ -42,5 +41,51 @@ The data preparation phase involved creating tables, loading data from CSV files
 + Procedures: Captures information about medical procedures performed during encounters.
 + Payers: Contains details about payers and their coverage contributions.
 
+# 📈 Analysis
+# 1. SQL Analysis
+The following SQL queries were used to analyze patient encounter costs, financial risks, and procedure trends:
+
+# 1.1 Evaluating Financial Risk by Encounter Outcome
++ Objective: This query identifies the ReasonCodes that lead to the highest financial risk by calculating the uncovered cost (total claim cost minus payer coverage) for each encounter outcome.
++ Explanation:
+The query combines patient demographics with encounter details to compute the uncovered cost for each encounter.
+It then aggregates the data to calculate the average uncovered cost, total uncovered cost, and the number of encounters for each ReasonCode and EncounterOutcome.
+### View the SQL Query :https://github.com/venugopal2202/project_02/blob/main/SQL/Evaluating%20Financial%20Risk
+
+## 1.2 Identifying Patients with Frequent High-Cost Encounters
++ Objective: This query identifies patients who had more than 3 encounters in a year, where each encounter had a total claim cost above $10,000.
++ Explanation:
+A CTE (HighCostEncounters) is used to calculate the total number of encounters and the sum of claim costs for each patient grouped by year.
+The query filters for patients whose total encounters exceed 3 and sorts them by the number of encounters and total claim costs in descending order.
+### View the SQL Query:https://github.com/venugopal2202/project_02/blob/main/SQL/Identifying%20Patients
+## 1.3 Identifying Risk Factors Based on Demographics
++ Objective: This query identifies the top 3 most frequent diagnosis codes (ReasonCodes) and analyzes their association with patient demographics such as gender, race, and ethnicity to understand which groups are most affected by high-cost encounters.
++ Explanation:
+The query first determines the top 3 ReasonCodes with the most encounters.
+It then calculates the average uncovered cost, total uncovered cost and number of encounters for each group segmented by gender, race, and ethnicity.
+### View the SQL Query:https://github.com/venugopal2202/project_02/blob/main/SQL/Identifying%20Risk%20Factors
+
+## 1.4 Analyzing Payer Contributions for Procedure Costs
++ Objective: This query analyzes payer contributions for the base cost of procedures and identifies any gaps between the total claim cost and the payer coverage.
++ Explanation:
+The query calculates the total base cost, total claim cost and total payer coverage for each procedure (ProcedureCode and ProcedureDescription) grouped by PAYER.
+It also computes the uncovered cost as the difference between total claim cost and total payer coverage.
+The results are ordered by the highest uncovered costs to highlight significant financial gaps.
+### View the SQL Query :https://github.com/venugopal2202/project_02/blob/main/SQL/Payer%20Contributions
+
+## 1.5 Analyzing Patient Encounter Duration
++ Objective: This query calculates the average encounter duration for each EncounterClass per organization, identifying encounters where the duration exceeds 24 hours.
++ Explanation:
+The query calculates the duration of each encounter in hours by subtracting the START time from the STOP time.
+It then calculates the average duration for each EncounterClass within each organization and counts the number of encounters that exceed 24 hours.
+### View the SQL Query :https://github.com/venugopal2202/project_02/blob/main/SQL/Analyzing%20Patient%20Encounter
+
+## 1.6 Identifying Patients with Multiple Procedures Across Encounters
++ Objective: This query identifies patients who had multiple procedures across different encounters with the same ReasonCode.
++ Explanation:
+The query first calculates the distinct encounters and distinct procedures for each patient and ReasonCode.
+It then filters the results to only include patients with more than one encounter (DistinctEncounters > 1), ensuring that the analysis focuses on repeated high-cost utilization patterns.
+Finally, the patient details such as FIRST, LAST, GENDER, and BIRTHDATE are retrieved and the results are ordered by encounter frequency and total procedures.
+### View the SQL Query :https://github.com/venugopal2202/project_02/blob/main/SQL/Identifying%20Patients
 
 
