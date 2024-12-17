@@ -1,5 +1,4 @@
-/**Identifying Patients with Multiple Procedures Across Encounters
-Q 0.5
+
 Objective:
 Find patients who had multiple procedures across different encounters with the same ReasonCode. **/
 
