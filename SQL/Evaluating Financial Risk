@@ -1,5 +1,5 @@
-/*Evaluating Financial Risk by Encounter Outcome
-Q 0.1
+
+
 Objective:
 Determine which ReasonCodes lead to the highest financial risk based on the total uncovered cost
  (difference between total claim cost and payer coverage).*/
