@@ -1,5 +1,4 @@
-/**Analyzing Patient Encounter Duration for Different Classes
-Q 0.6
+
 Objective:
 Calculate the average encounter duration for each class (EncounterClass) per organization, identifying any encounters that exceed 24 hours.**/
 
