@@ -36,11 +36,11 @@ The data preparation phase involved creating tables, loading data from CSV files
 
 ### Tables created:  https://github.com/venugopal2202/project_02/blob/main/SQL/CREATING%20TABLE%20AND%20INJECTING%20DATA
 
-Encounters: Stores patient encounter details including costs, codes, and descriptions.
-Organizations: Contains information about healthcare organizations, locations, and addresses.
-Patients: Includes patient demographics like gender, race, birthdate, and location.
-Procedures: Captures information about medical procedures performed during encounters.
-Payers: Contains details about payers and their coverage contributions.
++ Encounters: Stores patient encounter details including costs, codes, and descriptions.
++ Organizations: Contains information about healthcare organizations, locations, and addresses.
++ Patients: Includes patient demographics like gender, race, birthdate, and location.
++ Procedures: Captures information about medical procedures performed during encounters.
++ Payers: Contains details about payers and their coverage contributions.
 
 
 
