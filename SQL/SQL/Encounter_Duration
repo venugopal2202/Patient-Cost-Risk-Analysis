@@ -1,0 +1,3 @@
+Objective:
+--			Calculate the average encounter duration for each class (EncounterClass) per organization, identifying any encounters that exceed 24 hours.
+
