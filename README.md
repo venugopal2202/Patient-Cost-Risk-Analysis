@@ -1,5 +1,5 @@
 
-# 🏥 Pandemic Mortality Trends: A Deep Dive into Provisional COVID-19 Death Data
+# 🏥 Patient Encounter Cost and Risk Analysis in Healthcare Systems
 # 📊 Project Overview
 This project focuses on identifying patients with frequent high-cost encounters, analyzing procedure costs, and evaluating financial risks due to payer coverage gaps. Leveraging SQL-based analysis and Power BI visualizations, the project aims to uncover insights to improve operational efficiency, patient care, and resource planning in healthcare organizations.
 
