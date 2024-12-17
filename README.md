@@ -88,4 +88,15 @@ It then filters the results to only include patients with more than one encounte
 Finally, the patient details such as FIRST, LAST, GENDER, and BIRTHDATE are retrieved and the results are ordered by encounter frequency and total procedures.
 ### View the SQL Query :https://github.com/venugopal2202/project_02/blob/main/SQL/Identifying%20Patients
 
+# 2.Power BI Visualizations 🖌️
+|SL-NO|DESCRIBE|LINK|
+|-|-|-|
+|2.1|Encounter Cost Distribution by Encounter Class|https://github.com/venugopal2202/project_02/blob/main/POWER%20BI/Screenshot%202024-12-17%20145624.png|
+|2.2|High-Cost Patient Identification|https://github.com/venugopal2202/project_02/blob/main/POWER%20BI/Screenshot%202024-12-17%20145654.png|
+|2.3|Uncovered Costs by Payer and Reason Code|https://github.com/venugopal2202/project_02/blob/main/POWER%20BI/Screenshot%202024-12-17%20145716.png|
+|2.4| Procedure Cost Trends|https://github.com/venugopal2202/project_02/blob/main/POWER%20BI/Screenshot%202024-12-17%20145738.png|
+|2.5|Conclusion|https://github.com/venugopal2202/project_02/blob/main/POWER%20BI/Screenshot%202024-12-17%20160343.png|
+
+# 🎯 Conclusion
+This project provides actionable insights for healthcare organizations to identify cost trends, optimize resource allocation, and manage financial risks effectively.
 
